@@ -1,0 +1,4 @@
+tern init ./internal/store/pgstore/migrations
+tern new --migrations ./internal/store/pgstore/migrations create_rooms_table
+
+sqlc generate -f ./internal/store/pgstore/sqlc.yml
